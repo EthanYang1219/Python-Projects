@@ -1,0 +1,15 @@
+#For loops = executes a block of code a fixed number of times.
+
+# for x in range(1, 11):   #ending index is exclusive so it only really goes to 19
+#     print(x) # counts to 10
+# credit_card = "1234-5678-0012-1234"
+# for count in reversed(range(0,12,2)): #counts in reverse and in steps of 2 so 10,8,6,4,2,0
+#     print(count)
+
+# print("Happy Birthday!")
+
+for x in range(1,21):
+    if x == 4 or x == 13: #skips over 4 and 13
+        continue
+    else: 
+        print(x)
