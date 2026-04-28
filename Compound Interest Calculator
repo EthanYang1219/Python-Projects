@@ -1,0 +1,26 @@
+# Compound Interest Calculator
+interest_rate = 0
+principle_balance = 0
+time = 0
+
+while True:
+    principle_balance = float(input("Please enter the principle amount: "))
+    if principle_balance <=0:
+        print("Principle Balance cannot be less than zero")
+    else:
+        break
+while True:
+    interest_rate = float(input("Please enter your interest rate: "))
+    if interest_rate <=0:
+        print("Interest Rate cannot be be less than zero!")
+    else:
+        break
+while True:
+    time = int(input("Please enter the time in years: "))
+    if time<=0:
+        print("Time cannot be be less than zero!")
+    else:
+        break
+
+final_amount = principle_balance * pow((1 + interest_rate / 12), time)
+print(f"Your final balance is ${final_amount:.2f} after {time} years")

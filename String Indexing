@@ -1,0 +1,13 @@
+credit_number = "1234-5678-9012-3456"
+# print(credit_number[10])
+# print(credit_number[0:9]) # ending index is exclusive but starting index is inclusive
+# print(credit_number[5:]) #if you have no end index, it prints the entire string by default
+# print(credit_number[-1]) #starts counting from the last index to the left with the most right index being the negative 1 index
+
+print(credit_number[::2]) # prints every 2nd character (so the 0th 2nd, 4th, 6th ... etc)
+#[start: end: step]
+#Practical example
+credit_number = credit_number[::-1] #reversing a string by setting the step to be -1 (since you start from the last index and print by a increment of 1)
+last_digits = credit_number[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digits}")
+

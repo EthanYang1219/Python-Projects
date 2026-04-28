@@ -1,0 +1,13 @@
+price1 = 3000.14159
+price2 = -1219.06
+price3 = 1200.34
+
+print(f"Price 1 is ${price1:.2f}") #: .numf is the number of decimals
+print(f"Price 2 is ${price2:10}") #The number of spaces the number occupiers. in this case it is 10 
+print(f"Price 3 is ${price3:010f}") #Replaces the empty spaces with 0 
+
+print(f"Price 1 is ${price1:<10}") #Left justifying
+print(f"Price 2 is ${price2:>10}") #Right justifying
+print(f"Price 3 is ${price3:^10}") #Central justifying
+
+print(f"Price 1 is ${price1: ,.5f}")

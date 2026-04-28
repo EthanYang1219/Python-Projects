@@ -1,0 +1,27 @@
+# name = input("Please enter your full name:")
+# length = len(name)
+# spaces = name.find(" ")
+# Captial = name.upper()
+# result = name.isdigit()
+# result_alpha = name.isalpha()
+# if result_alpha == True:
+#     print(f"Your name is {name} which is {length} your name is {Captial}")
+# else:
+#     print("Please enter only characters. No numbers or special characters such as @!#")
+# phone_number = input("Please enter your phone #:")
+# phone_count = phone_number.count("-")
+# phone_length = phone_number.replace(" ", "-")
+# print(phone_length)
+
+#Excercise time: 
+# 1. username is no more than 12 characters 
+# 2. username must not contain spaces
+# 3. username must not contain digits
+
+user_name = input("Please enter a username:")
+if len(user_name) <= 12 and user_name.isalpha() == True and not user_name.find(" ") == 0:
+    print(f"Username is: {user_name}")
+elif len(user_name) > 12:
+    print("Please enter a shorter username, a maximum of 12 characters is allowed")
+else: 
+    print("Please enter a valid username. No spaces and numbers are allowed ")
