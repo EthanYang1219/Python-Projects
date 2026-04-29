@@ -1,0 +1,25 @@
+# fruits =     ["apple", "orange", "banana", "grapes"]
+# vegetables = ["broccoli","celery","cauliflower","peppers"]
+# meat =       ["beef","pork","fish","chicken"] #Setting vectors to be matricies
+
+# groceries =[fruits, vegetables, meat] #setting up the matrix
+
+# print(groceries[0][0]) #2 indicies to indicate the element you are printing. This will be apple
+# print(groceries[2][1]) #The 3rd row, 2nd column so pork
+
+# for collection in groceries: #creating a for loop to print the matrix
+#     for food in collection:
+#         print(food, end=" ")
+#     print()
+
+#Phone pad exercise
+
+num_pad = ((1,2,3),
+           (4,5,6),
+           (7,8,9),
+           ("*",0,"#"))
+
+for row in num_pad: #Every tuple in the num_pad so 3 
+    for num in row: #Every element in each tuple
+        print(num, end=" ") #print 
+    print()

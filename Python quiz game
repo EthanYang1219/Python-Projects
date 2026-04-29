@@ -1,0 +1,50 @@
+#Python quiz game
+questions= ("How many people have ascended Burden of Dreams?","Who free soloed El Capitan?","How many career grand slams does Lewis Hamilton have? (Pole, Fastest Lap, Led every Lap)","What is the fastest lap (average speed) ever recorded in Formula 1?","Which team did Lionel Messi score against for his 600th goal for Barcelona?") #5 questions
+
+options = (("A. 6" , "B. 10", "C. 1", "D. 5"), ("A. Alex Harold", "B. Alex Honnold", "C. Alex Megos", "D. Adam Ondra"), ("A. 9", "B. 8", "C. 7", "D. 6"), ("A. 2020 Italian Grand Prix Pole Lap", "B. 2004 Italian Grand Prix Pole Lap", "C. 2024 Italian Grand Prix Pole Lap", "D. 2025 Italian Grand Prix Pole Lap"), ("A. Liverpool", "B. Real Madrid", "C. Valencia ", "D. Granada"))
+
+answers = ("A", "B", "D", "D", "A")
+guesses = []
+score = 0
+question_num = 0
+
+
+for question in questions:
+    print("---------------")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+    guess = input("Enter (A,B,C,D): ").upper()
+    guesses.append(guess)
+    if guess == answers[question_num]:
+        score += 1
+        print("CORRECT!")
+    else:
+        print("Incorrect!")
+        print(f"{answers[question_num]} is the correct answer")
+    question_num += 1
+
+print("---------------")
+print("    RESULTS    ")
+print("---------------")
+
+print("answers: ", end=" ")
+for answer in answers:
+    print(answer, end= " ")
+print()
+
+print("guesses: ", end=" ")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+
+score = int(score / len(questions) *100)
+
+
+
+if score == 100:
+    print(f"WOW AMAZING YOU GOT {score}%")
+elif 50 < score < 100: 
+    print(f"Your score is {score}% Not Bad!")
+else:
+    print(f"Your score was {score}%. We all have bad days, come back stronger next time!")

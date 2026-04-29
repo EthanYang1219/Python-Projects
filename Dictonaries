@@ -1,0 +1,31 @@
+#dictionary = a collection of {key:value} pairs. Ordered and changeable. No duplicates
+
+capitals = {"USA": "Washington D.C",
+            "India": "New Delhi",
+            "China": "Bejing",
+            "Russia": "Moscow"}
+
+# print(capitals.get("Japan")) #Returns none as that is not a key 
+
+# if capitals.get("Russia"):
+#     print("That capital exists")
+# else:
+#     print("That capital doesnt't exist")
+
+# capitals.update({"Germany": "Berlin"}) #updated a key and value to the dictionary
+# capitals.pop("China") #Removed China from the dictonary
+# capitals.popitem() # Removes the latest keys added so Germany 
+
+# print(capitals)
+
+# keys = capitals.keys()
+
+# for key in capitals.keys(): #prints all the keys
+#     print(key)
+
+
+values = capitals.values()
+
+for value in capitals.values(): #All the corresponding values to their respective keys. So the capital of China is Beijing as that is the corresponding value of the key.
+    print(value)
+    
