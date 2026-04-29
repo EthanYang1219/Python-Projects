@@ -1,0 +1,37 @@
+#collections = single "variable" used to store multiple values
+# List = [] ordered and changeable. Duplicates allowed
+# Set = {} unordered and immutable (unchangeable). Addition/Removal are allowed. NO DUPLICATES!
+# Tuple = () ordered and unchangeable. Duplicates OK. Faster 
+
+# fruits = ["apple", "orange", "banana"]
+# # print(dir(fruits))
+# # help(fruits)
+# # print(help)
+# #print(fruits[::-1])
+# # print(len(fruits)) #The number of elements in the collection (Length)
+# #print("pineapple" in fruits) #Boolean statement. Checking whether or not pineapple is within the list
+# #fruits[0] = "pineapple" #Changes the first element to apple
+# fruits.append("grapes") #add a element to the end of the list
+# fruits.remove("orange") #removes an element that is WITHIN THE LIST. (Or else error)
+# fruits.insert(3,"coconut") #inserts a element
+# fruits.sort() #Sorts in alphabetical order
+# fruits.reverse() #reverses the list in alphabetical order
+# #fruits.clear() #clears the list!
+# print(fruits.index("grapes"))
+# print(fruits)
+# print(fruits.count("orange")) #the number of that element, I.e the number of "oranges", so 0
+
+# #Sets
+# names = {"Ethan", "Alan", "Jun"}
+
+# names.add("Joe") #Adding an element is allowed since addition/removal is allowed with sets
+# #names.sort() #cannot alter the set hence an error
+# print(names)
+
+#Tuples
+
+fruits = ("apple", "banana", "grapes")
+
+print(fruits.count("coconut")) #Tuples are faster than sets
+
+
