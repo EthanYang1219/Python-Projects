@@ -1,0 +1,32 @@
+menu = {"burger": 3.00,  #Creating a dictonary for the menu items
+        "nachos": 5.00,
+        "popcorn": 4.00,
+        "soda": 2.50,
+        "fries": 3.50,
+        "chips": 1.50,
+        "pretzels": 4.00,
+        "lemonade": 2.50}
+
+cart =[]
+total = 0
+print("------MENU------")
+for key, value in menu.items():
+    print(f"{key:10}: ${value:.2f}")
+print("----------------")
+
+while True:
+    food = input("Select an item (q to quit): ").lower() #Turns the user input into lowercase characters 
+    if food == "q":
+        break
+    elif menu.get(food) is not None: #If the food is not within the menu, we add it to your cart regardless
+        cart.append(food)
+
+print("----YOUR ORDER----")
+print(cart)
+
+for food in cart:
+    total += menu.get(food)   #Adding the price to the total 
+    print(food, end=" ")
+
+print()
+print(f"Your total is ${total:.2f}")
