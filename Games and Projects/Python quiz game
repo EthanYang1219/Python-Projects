@@ -40,8 +40,6 @@ print()
 
 score = int(score / len(questions) *100)
 
-
-
 if score == 100:
     print(f"WOW AMAZING YOU GOT {score}%")
 elif 50 < score < 100: 
