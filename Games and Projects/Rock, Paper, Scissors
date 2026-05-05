@@ -23,7 +23,6 @@ while running:
     else:
         print("You Lose!")
 
-   
     if not input("Play again? (yes/no): ").lower() == "yes":
         running = False
 
