@@ -1,0 +1,49 @@
+import random
+
+
+#● ┌ ─ ┐ │ └ ┘
+dice_art = { # a dictonary made up of key value pairs where the value is a tuple (ordered and unchangeable but faster than a list)
+    1: ("┌─────────┐",
+        "│         │",
+        "│    ●    │",
+        "│         │",
+        "└─────────┘"),
+    2: ("┌─────────┐",
+        "│  ●      │",
+        "│         │",
+        "│      ●  │",
+        "└─────────┘"),
+    3: ("┌─────────┐",
+        "│  ●      │",
+        "│    ●    │",
+        "│      ●  │",
+        "└─────────┘"),
+    4: ("┌─────────┐",
+        "│  ●   ●  │",
+        "│         │",
+        "│  ●   ●  │",
+        "└─────────┘"),
+    5: ("┌─────────┐",
+        "│  ●   ●  │",
+        "│    ●    │",
+        "│  ●   ●  │",
+        "└─────────┘"),
+    6: ("┌─────────┐",
+        "│  ●   ●  │",
+        "│  ●   ●  │",
+        "│  ●   ●  │",
+        "└─────────┘")
+}
+dice =[]
+total = 0
+num_of_dice = int(input("How many dice?: ")) #asking the user how many dices are being rolled
+for die in range(num_of_dice):
+    dice.append(random.randint(1,6))    #adding the values to the list named die
+
+for die in range(num_of_dice): #for every single die in the number of dice the user selected
+    for line in dice_art.get(dice[die]): #for the number dies that in the randomly generated list of dies
+        print(line)
+for die in dice: #calculating the total sum of the dice rolls
+    total += die
+print(f"Your Total is:{dice} = {total}")
+
