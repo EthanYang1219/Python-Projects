@@ -1,0 +1,20 @@
+# Iterables = An object/collection that can return its elements one at a time, 
+#             allowing it to be iterated over in a loop
+
+#numbers =[1, 2, 3, 4, 5] #lists are iterable
+#numbers = (1,2,3,4,5) #tuples are also iterable
+
+# for number in reversed(numbers):
+#     print(number, end=" - ")
+#fruits = {"apple", "orange", "banana", "coconut"} #Sets are not reversible
+#name ="Esan"
+ 
+# for character in name: #Prints my name
+#     print(character, end= "")
+
+my_dictonary = {"Alpha": 1,
+                "Bravo": 2,
+                "Charlie": 3,}
+
+for key, value in my_dictonary.items(): #returns the keys with their respective values 
+    print(f"{key}: {value}")
