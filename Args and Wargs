@@ -1,0 +1,54 @@
+# *args    = allows you to pass multiple non-key arguments
+# **kwargs = allows you to pass multiple keyword-arguments
+#          * unpacking operator
+# 4 types: 1. positional 2. default 3. Keyword 4. ARBITRARY
+
+
+# def add(*args): #functions now allows multiple non-key arguments
+#     total = 0
+#     for arg in args: #calculates the sum of the arguments
+#         total += arg
+#     return total
+
+
+# print(add(1,2,3)) #1+2+3 =6
+
+
+# def display_name(*args):
+#     for arg in args:
+#         print(arg,end=" ")
+#     print()
+
+# display_name("Mr.","Ethan","Yang")
+
+# def print_address(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value.upper()}")
+    
+
+# print_address(Street="Jones St",
+#               Apt="200", 
+#               City="Vancouver", 
+#               Province="British Columbia", 
+#               ZipCode="V7K3K9")
+
+def shipping_label(*args, **kwargs): #kwargs always follow args
+    for arg in args:
+        print(arg, end=" ")
+    print()
+    if "Apt" in kwargs:
+        print(f"{kwargs.get('street')} {kwargs.get('Apt')}")
+    if "pobox" in kwargs:
+        print(f"{kwargs.get('pobox')}")
+    else:
+        print(f"{kwargs.get('street')}")
+    print(f"{kwargs.get('City')} {kwargs.get('Province')}, {kwargs.get('ZipCode')}")
+
+
+shipping_label("Dr.", "Spongebob", "Squarepants",
+               street= "098 Jones St",
+               Apt="Unit #200", 
+               pobox="PO Box #1204",
+               City="Vancouver", 
+               Province="British Columbia", 
+               ZipCode="V7K3K9")
