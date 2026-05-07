@@ -1,0 +1,37 @@
+# List Comprehensions = A concise way to create lists in Python
+#                       Compact and easier to read compared to traditional loops
+#                       [expression for value in iterable if condition]
+
+#example:
+
+# doubles = [] #Most basic way to create a list from 1 to 10 with each index being doubled ([2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
+# for x in range(1,11):
+#     doubles.append(x*2)
+
+# print(doubles)
+
+# doubles =[x*2 for x in range(1,11)] Much more compact compared to the example above
+# print(doubles)
+
+# triples = [y*3 for y in range(1,11)] #triples each number from 1 to 10
+# squares = [z**2 for z in range(1,11)] #squares each number from 1 to 10
+# print(triples)
+# print(squares)
+
+# fruits = ["apples", "orange", "banana","grapes"]
+# fruit_chars = [fruit[0] for fruit in fruits] #returns the first character of each string
+# print(fruit_chars)
+
+# numbers = [1,-2,3,-4,5,-6]
+# positive_nums = [ num for num in numbers if num >=0] #returns all the positive numbers
+# negative_nums = [ num for num in numbers if num <0] #returns all the negative numbers
+# even_nums = [num for num in numbers if  num%2 == 0] #returns all the even numbers fro the list
+# odd_nums = [num for num in numbers if  num%2 != 0] #returns all the odd numbers fro the list
+# print(positive_nums)
+# print(negative_nums)
+# print(even_nums)
+# print(odd_nums)
+
+grades = [90,60,77,55,49,30]
+passing_grades = [grade for grade in grades if grade >= 50]
+print(passing_grades)

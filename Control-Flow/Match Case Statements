@@ -1,0 +1,52 @@
+# Match-case statement (switch): An alternative to using many 'elif' statements
+#                                Executes some code if a value matches a 'case'
+#                                Benefits: cleaer and syntax is more readable
+
+# def day_of_week(day): #A function that returns days of the week
+#     match day:
+#         case 1:
+#             return "It is Monday"
+#         case 2:
+#             return "It is Tuesday"
+#         case 3:
+#             return "It is Wednesday"
+#         case 4:
+#             return "It is Thursday"
+#         case 5:
+#             return "It is Friday"
+#         case 6:
+#             return "It is Saturday"
+#         case 7:
+#             return "It is Sunday"
+#         case _: #Acts as a else case for match-case 
+#             return "Not a valid day please enter a valid day of the week"
+
+# print(day_of_week(3))
+
+def is_weekend(day): #pretty inefficent way of writing this function. See below for an alternative
+    match day:
+        case "Monday":
+            return False
+        case "Tuesday":
+            return False
+        case "Wednesday":
+            return True
+        case "Thursday":
+            return True
+        case "Friday":
+            return True
+        case "Saturday":
+            return True
+        case "Sunday":
+            return True
+        case _:
+            return False
+
+def is_weekend(day): #pretty inefficent way of writing this function. See below for an alternative
+    match day:
+        case "Saturday"| "Sunday":
+            return True
+        case _:
+            return False
+       
+print(is_weekend("Monday"))
