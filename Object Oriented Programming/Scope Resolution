@@ -1,0 +1,22 @@
+# variable scope = where a variable is visible and accessible
+# scope resolution = (LEGB) Local -> Enclosed -> Global -> Built-In
+
+# def func1(): #Variable a has a local scope within function 1
+#     print(x)
+
+# def func2(): #Variable b has a local scope within function 2
+#     print(x)
+
+# # **Functions cant see inside other Functions**
+
+# x = 3
+# func1()
+# func2()
+
+from math import e #e is builtin
+def func1():
+    print(e)
+
+e = 3
+
+func1() #prints 3 since Global precedes Built-In scope

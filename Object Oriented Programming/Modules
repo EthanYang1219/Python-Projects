@@ -1,0 +1,21 @@
+# module = a file containing code you wnat to include in your program
+#          use 'import' to include a module (built-in or your own)
+#          useful to break up a large program reusable separate files
+
+#print(help("modules")) # to list all the modules avaliable in the standard Python libary
+# import math #to import everything from the math libary
+# import math as m #reassign the name of the libary as m
+# from math import pi #import only one thing from the math module. In this case, pi
+
+import example 
+
+
+
+result = example.square(3)
+result = example.cube(3)
+result = example.circumference(3)
+result = example.area(3)
+print(result)
+
+
+
