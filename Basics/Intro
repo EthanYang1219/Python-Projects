@@ -1,0 +1,36 @@
+# Variables = containers of values (string, integer, boolean, float)
+first_name = "Ethan"
+print(f"Hello {first_name}")
+
+#Integers
+age = 19
+num_of_students = 30
+print(f"You are: {age}")
+print(f"There are {num_of_students} students")
+
+#Float 
+gpa = 3.6
+print(f"My gpa is {gpa}")
+
+#Boolean
+Girlfriend_status = False
+if Girlfriend_status:
+    print("Ethan has a girl?")
+    print(f"{Girlfriend_status}")
+else:
+    print("Ethan has a girl?")
+    print(f"Nah bruh keep dreaming")
+#type cast functions
+print(type(gpa))
+weighted_gpa = int(gpa) #only keeps the interger DOESNT ROUND
+print(f"My weighted gpa is {weighted_gpa}")
+float_num = float(age)
+print(f"I am {age} years old!")
+
+#Input functions
+what_is_name = input("What is your name? :")
+age = int(input("How old are you? :"))
+age = age + 1
+print(f"My name is {what_is_name}!")
+print("HAPPY BIRTHDAY!")
+print(f"You are {age} years old!")

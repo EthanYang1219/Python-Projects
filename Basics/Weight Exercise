@@ -1,0 +1,13 @@
+def Weight_Calculator():
+    while True:
+        weight = float(input("What is your weight?: "))
+        unit = input("KGs or LBs? (Input K or L): ")
+        if unit == "K":
+            weight = weight * 2.205
+            print(f"You weigh {round (1, weight)} LBs!")
+        elif unit == "L":
+            weight = weight/ 2.205
+            print(f"You weigh {round(weight, 1)} KGs!")
+        else: 
+            print(f"{unit} is not a valid unit try again")
+Weight_Calculator()

@@ -2,6 +2,6 @@ friends = 1
 friends += 1 
 friends *= 3
 friends /= 2
-remainder = friends % 2 //returns the remainder of friends divided by 2 (friends mod 2)
+remainder = friends %2
 print(friends)
 print(remainder)
