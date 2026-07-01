@@ -1,0 +1,24 @@
+#Calculator Function
+def calculator():
+   operator = input("Please enter an operator(+,-,*,/): ")
+   num1 = float(input("Enter your first number: "))
+   num2 = float(input("Enter your second number: "))
+   error = "Please enter a valid arithmetic function"
+   if operator == "+":
+      result = num1 + num2
+      print(round(result, 10))
+   elif operator == "-":
+      result = num1 - num2
+      print(round(result, 10))
+   elif operator == "*":
+      result = num1 * num2
+      print(round(result, 10))
+   elif operator == "/":
+      result = num1 / num2
+      print(round(result, 10))
+   else: 
+      print(error)
+
+calculator()
+   
+
